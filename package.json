@@ -1,5 +1,5 @@
 {
-  "homepage": "https://abel-06.github.io/jogo_memoria/",
+  "homepage": "https://abel-06.github.io/jogo_da_memoria/",
   "name": "gamememory",
   "private": true,
   "version": "0.0.0",
@@ -13,8 +13,10 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "framer-motion": "^12.19.1",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-flip-toolkit": "^7.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

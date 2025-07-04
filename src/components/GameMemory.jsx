@@ -2,43 +2,36 @@ import React, { useEffect, useState } from 'react';
 
 import styles from './GameMemory.module.css';
 
-import versoCarta from '../assets/Carta_memory.webp';
+import versoCarta from '../assets/VersoCarta.jpeg';
 
 import Carta from './Carta';
 
 //imagens
-import Magem_1 from '../assets/Magem_1.jpg';
-import Magem_2 from '../assets/Magem_2.jpg';
-import Magem_3 from '../assets/Magem_3.jpg';
-import Magem_4 from '../assets/Magem_4.jpg';
-import Magem_5 from '../assets/Magem_5.jpg';
-import Magem_6 from '../assets/Magem_6.jpg';
-import Magem_7 from '../assets/Magem_7.jpg';
-import Magem_8 from '../assets/Magem_8.jpg';
-import Magem_9 from '../assets/Magem_9.jpg';
-import Magem_10 from '../assets/Magem_10.jpg';
-import Magem_11 from '../assets/Magem_11.jpg';
-import Magem_12 from '../assets/Magem_12.jpg';
-import Magem_13 from '../assets/Magem_13.jpg';
-import Magem_14 from '../assets/Magem_14.jpg';
+import img1 from '../assets/Charizard.jpeg';
+import img2 from '../assets/Dragonite.jpeg';
+import img3 from '../assets/Jiggypluff.jpeg';
+import img4 from '../assets/Eevee.jpeg';
+import img5 from '../assets/Pikachu.jpeg';
+import img6 from '../assets/MeoTwo.jpeg';
+import img7 from '../assets/Greninja.jpeg';
+import img8 from '../assets/Magikarp.jpeg';
+import img9 from '../assets/Lucario.jpeg';
+import img10 from '../assets/Trio.jpeg';
+
+
 
 
 const pares = [
-  { imagem: Magem_1 },
-  { imagem: Magem_2 },
-  { imagem: Magem_3 },
-  { imagem: Magem_4 },
-  { imagem: Magem_5 },
-  { imagem: Magem_6 },
-  { imagem: Magem_7 },
-  { imagem: Magem_8 },
-  { imagem: Magem_9 },
-  { imagem: Magem_10 },
-  { imagem: Magem_11 },
-  { imagem: Magem_12 },
-  { imagem: Magem_13 },
-  { imagem: Magem_14 },
- 
+  { imagem: img1 },
+  { imagem: img2 },
+  { imagem: img3 },
+  { imagem: img4 },
+  { imagem: img5 },
+  { imagem: img6 },
+  { imagem: img7 },
+  { imagem: img8 },
+  { imagem: img9 },
+  { imagem: img10 },
 ]
 
 function embaralhar(array) {
@@ -62,6 +55,7 @@ const GameMemory = ({setTela}) => {
 
   useEffect(() => {
     setCartas(embaralhar(cartasBase));
+     console.log(embaralhar(cartasBase))
   }, []);
 
   useEffect(() => {
